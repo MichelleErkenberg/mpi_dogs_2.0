@@ -1,0 +1,29 @@
+#ignore env_samples but not the quicksand file
+!data/env_samples/quicksand.v2/final_report.tsv
+data/env_samples/
+
+!data/dog_samples/Consensus/*.fasta
+
+#Ignore the cleaning file
+cleaning/
+
+# Optionally, ignore specific file types that might be large or sensitive
+*.bam
+*.fastq
+#*.fasta
+*.gz
+*.bai
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+

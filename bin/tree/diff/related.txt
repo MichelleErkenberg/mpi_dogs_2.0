@@ -1,0 +1,10 @@
+Anda,D89_A1a,GSD_19.5_Sisimiut
+Cami,D31_B
+Charlie,KM061497.1_C,KM061535.1_C
+Fritzy,D69_A1a
+Heidi,D90_A1a,D93_A1a
+Lily,KU290986_A1a.1,D59_A1a
+ThorA
+ThorB,D31_B
+Urza,D07_A1a,D18_A1a,D27_A
+Vito,C62_A1a

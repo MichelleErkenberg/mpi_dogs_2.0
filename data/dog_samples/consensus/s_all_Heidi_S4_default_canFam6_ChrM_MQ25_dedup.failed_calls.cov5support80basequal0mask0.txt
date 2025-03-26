@@ -1,0 +1,23 @@
+#ref_position	ref_base	consensus_base	coverage	consensus_support	low_coverage	low_cons_support	annotation	anno_code	#parameters:cov5support80basequal0mask0
+1	G	N	1		105			
+2	T	N	1		105			
+3	T	N	2		105			
+4	A	N	2		105			
+5	A	N	3		105			
+6	T	N	4		105			
+16158	A	N	1150	73.30		110		
+16168	A	N	1128	70.92		110		
+16178	A	N	1112	59.89		110		
+16208	A	N	770	54.03		110		
+16248	A	N	478	53.56		110		
+16268	A	N	520	75.58		110		
+16288	A	N	550	75.27		110		
+16318	A	N	724	68.51		110		
+16358	A	N	1234	57.94		110		
+16378	G	N	1334	65.82		110		
+16388	A	N	1284	79.44		110		
+16398	A	N	1297	68.47		110		
+16724	A	N	3		105			
+16725	T	N	1		105			
+16726	A	N	1		105			
+16727	A	N	0		105			
