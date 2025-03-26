@@ -3,14 +3,14 @@ library(ggplot2)
 library(reshape2)
 library(gridExtra)
 
-setwd("~/github/mpi_dogs/")
+setwd("~/github/mpi_dogs_2.0/")
 
 ### ------------------Heatmaps container office-------------------
 
-data_container <- read.csv("data/dog_samples/R_prep/all_dogs_AC/Container.csv")
+data_container <- read.csv("data/dog_samples/R_prep/all_dogs/R_split/Container.csv")
 
 # Heatmap for each Container dog
-heatmap_heidi <- ggplot(data_container, aes(x = x, y = y, fill = AC.Heidi)) +
+heatmap_heidi <- ggplot(data_container, aes(x = x, y = y, fill = Heidi)) +
   geom_tile() +
   scale_fill_gradient(low = "white", high = "blue", limits = c(0, 1)) +
   scale_x_continuous(breaks = unique(data_container$X)) +
@@ -26,7 +26,7 @@ heatmap_heidi <- ggplot(data_container, aes(x = x, y = y, fill = AC.Heidi)) +
   )
 
 
-heatmap_vito <- ggplot(data_container, aes(x = x, y = y, fill = AC.Vito)) +
+heatmap_vito <- ggplot(data_container, aes(x = x, y = y, fill = Vito)) +
   geom_tile() +
   scale_fill_gradient(low = "white", high = "blue", limits = c(0, 1)) +
   scale_x_continuous(breaks = unique(data_container$X)) +
@@ -41,7 +41,7 @@ heatmap_vito <- ggplot(data_container, aes(x = x, y = y, fill = AC.Vito)) +
     legend.title = element_blank()
   )
 
-heatmap_fritzy <- ggplot(data_container, aes(x = x, y = y, fill = AC.Fritzy)) +
+heatmap_fritzy <- ggplot(data_container, aes(x = x, y = y, fill = Fritzy)) +
   geom_tile() +
   scale_fill_gradient(low = "white", high = "blue", limits = c(0, 1)) +
   scale_x_continuous(breaks = unique(data_container$X)) +
@@ -56,7 +56,7 @@ heatmap_fritzy <- ggplot(data_container, aes(x = x, y = y, fill = AC.Fritzy)) +
     legend.title = element_blank()
   )
 
-heatmap_urza <- ggplot(data_container, aes(x = x, y = y, fill = AC.Urza)) +
+heatmap_urza <- ggplot(data_container, aes(x = x, y = y, fill = Urza)) +
   geom_tile() +
   scale_fill_gradient(low = "white", high = "blue", limits = c(0, 1)) +
   scale_x_continuous(breaks = unique(data_container$X)) +
@@ -83,7 +83,7 @@ combined_plot_container <- grid.arrange(heatmap_fritzy, heatmap_heidi, heatmap_u
 ### ---------------------------heatmaps for Thor A and Lily office ----------------------
 
 
-data_thorA_lily <- read.csv("data/dog_samples/R_prep/Mimi_Linda.csv")
+data_thorA_lily <- read.csv("data/dog_samples/R_prep/all_dogs/R_split/Mimi_Linda.csv")
 
 
 # Heatmap for each dog
@@ -123,4 +123,4 @@ heatmap_thorA <- ggplot(data_thorA_lily, aes(x = x, y = y, fill = ThorA)) +
 print(heatmap_lily)
 print(heatmap_thorA)
 combined_plot_thorA_lily <- grid.arrange(heatmap_lily, heatmap_thorA, ncol = 1)
-ggsave("figures/thorA_lily_office_dogs_heatmap.png", combined_plot_thorA_lily, width = 16, height = 16)
+#ggsave("figures/thorA_lily_office_dogs_heatmap.png", combined_plot_thorA_lily, width = 16, height = 16)

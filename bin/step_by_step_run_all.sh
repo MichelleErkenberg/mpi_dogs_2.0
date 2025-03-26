@@ -102,8 +102,29 @@ done
 	echo "environmental data processed with "$s" SNPs"
 
 #uses the txt file with the location to sort those average radios into new csv files
-#python3 R_prep/env_place.py "$BASE_PATH/data/dog_samples/R_prep/R_prep_sample_vs_dog.csv" "$BASE_PATH/data/dog_samples/R_prep/dog_env_samples_24_v1.txt" "$BASE_PATH/data/dog_samples/R_prep/"
-#python3 R_prep/env_place.py "$BASE_PATH/data/dog_samples/R_prep/all_dogs_AC/R_prep_sample_vs_dog_AC.csv" "$BASE_PATH/data/dog_samples/R_prep/dog_env_samples_24_v1.txt" "$BASE_PATH/data/dog_samples/R_prep/all_dogs_AC"
+elif [[ "$x" == "split" ]]; then
+    TXT_FILE="$BASE_PATH/data/dog_samples/R_prep/dog_env_samples_24_v1.txt"
+    R_PREP_DIR="$BASE_PATH/data/dog_samples/R_prep"
+
+    for rfolder in "$R_PREP_DIR"/*; do
+        if [ -d "$rfolder" ]; then
+            rfolder_name=$(basename "$rfolder")
+            
+            # Neuen R_split Ordner erstellen
+            mkdir -p "$rfolder/R_split"
+            
+            # CSV-Verarbeitung für jede Datei im Ordner
+            for csv_file in "$rfolder"/R_prep_sample_vs_dog_*.csv; do
+                if [ -f "$csv_file" ]; then
+                    csv_basename=$(basename "$csv_file")
+                    python3 "$BASE_PATH/bin/R_prep/env_place.py" \
+                        "$csv_file" \
+                        "$TXT_FILE" \
+                        "$rfolder/R_split/"
+                fi
+            done
+        fi
+    done
 
 # for running the entire script
 elif [[ "$x" == "all" ]]; then

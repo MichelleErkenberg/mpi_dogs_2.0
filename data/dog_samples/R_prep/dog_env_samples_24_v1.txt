@@ -1,0 +1,89 @@
+sample_number	sample_id	office	office_number	x	y	category	category2	location	dog
+1	sample_1	Container		1	5	wall	dog_office		Fritzy_Heidi_Vito_Urza
+2	sample_2	Container		1	4		dog_office		Fritzy_Heidi_Vito_Urza
+3	sample_3	Container		1	3		dog_office		Fritzy_Heidi_Vito_Urza
+4	sample_4	Container		1	2		dog_office		Fritzy_Heidi_Vito_Urza
+5	sample_5	Container		1	1	wall	dog_office		Fritzy_Heidi_Vito_Urza
+6	sample_6	Container		2	5	wall	dog_office		Fritzy_Heidi_Vito_Urza
+7	sample_7	Container		2	4		dog_office		Fritzy_Heidi_Vito_Urza
+8	sample_8	Container		2	3		dog_office		Fritzy_Heidi_Vito_Urza
+9	sample_9	Container		2	2		dog_office		Fritzy_Heidi_Vito_Urza
+10	sample_10	Container		2	1	wall	dog_office		Fritzy_Heidi_Vito_Urza
+11	sample_11	Container		3	2		dog_office		Fritzy_Heidi_Vito_Urza
+12	sample_12	Container		3	1	wall	dog_office		Fritzy_Heidi_Vito_Urza
+13	sample_13	Container		4	2		dog_office		Fritzy_Heidi_Vito_Urza
+14	sample_14	Container		4	1	wall	dog_office		Fritzy_Heidi_Vito_Urza
+15	sample_15	Container		4	5	wall	dog_office		Fritzy_Heidi_Vito_Urza
+16	sample_16	Container		4	4		dog_office		Fritzy_Heidi_Vito_Urza
+17	sample_17	Container		5	5	wall	dog_office		Fritzy_Heidi_Vito_Urza
+18	sample_18	Container		5	4		dog_office		Fritzy_Heidi_Vito_Urza
+19	sample_19	Container		5	3		dog_office		Fritzy_Heidi_Vito_Urza
+20	sample_20	NC				nc	nc		Fritzy_Heidi_Vito_Urza
+21	sample_21	Container		5	2		dog_office		Fritzy_Heidi_Vito_Urza
+22	sample_22	Container		5	1	wall	dog_office		Fritzy_Heidi_Vito_Urza
+23	sample_23	Container		6	5	wall	dog_office		Fritzy_Heidi_Vito_Urza
+24	sample_24	Container		6	4		dog_office		Fritzy_Heidi_Vito_Urza
+25	sample_25	Container		6	3		dog_office		Fritzy_Heidi_Vito_Urza
+26	sample_26	Container		6	2		dog_office		Fritzy_Heidi_Vito_Urza
+27	sample_27	Container		6	1	door	dog_office		Fritzy_Heidi_Vito_Urza
+28	sample_28	Container		7	1	wall	dog_office		Fritzy_Heidi_Vito_Urza
+29	sample_29	PCR Lab				wall	lab	Sarah's desk	No dogs
+30	sample_30	PCR Lab				desk	lab	Sarah's desk	No dogs
+31	sample_31	PCR Lab				wall	lab	Ayinuer's desk	No dogs
+32	sample_32	PCR Lab				desk	lab	Ayinuer's desk	No dogs
+33	sample_33	PCR Lab				wall	lab	Sarah's old desk	No dogs
+34	sample_34	PCR Lab				desk	lab	Sarah's old desk	No dogs
+35	sample_35	Mimi/Linda	U2.85	1	1	wall	dog_office	Thor A's bed	ThorA_Lily
+36	sample_36	Mimi/Linda	U2.85	2	1		dog_office		ThorA_Lily
+37	sample_37	Mimi/Linda	U2.85	3	1		dog_office		ThorA_Lily
+38	sample_38	Mimi/Linda	U2.85	4	1	desk	dog_office	Mimi's desk	ThorA_Lily
+39	sample_39	Mimi/Linda	U2.85	4	3		dog_office		ThorA_Lily
+40	sample_40	Mimi/Linda	U2.85	3	3		dog_office	Water	ThorA_Lily
+41	sample_41	Mimi/Linda	U2.85	2	3	desk	dog_office	Lily's bed / Linda's desk	ThorA_Lily
+42	sample_42	Mimi/Linda	U2.85	1	3	wall	dog_office		ThorA_Lily
+43	sample_43	Mimi/Linda	U2.85	1	2	door	dog_office		ThorA_Lily
+44	sample_44	Mimi/Linda	U2.85	3	2		dog_office		ThorA_Lily
+45	sample_45	Mimi/Linda Hallway	U2.87	1		hallway	hallway	R2	ThorA_Lily
+46	sample_46	Mimi/Linda Hallway	U2.86	2		hallway	hallway	R1	ThorA_Lily
+47	sample_47	Mimi/Linda Hallway	U2.85	3		hallway	hallway	Mimi/Linda office	ThorA_Lily
+48	sample_48	Mimi/Linda Hallway	U2.84	4		hallway	hallway	L1	ThorA_Lily
+49	sample_49	Mimi/Linda Hallway	U2.83	5		hallway	hallway	L2	ThorA_Lily
+50	sample_50	Gunz	U2.43			door	nc_office	No dogs	No dogs
+51	sample_51	Gunz	U2.43			wall	nc_office	No dogs	No dogs
+52	sample_52	Tracy/Silke	U2.13	2	1	door	dog_office		Anda_Charlie
+53	sample_53	Tracy/Silke	U2.13	2	2		dog_office		Anda_Charlie
+54	sample_54	Tracy/Silke	U2.13	3	1	door	dog_office	Inner door	Anda_Charlie
+55	sample_55	Tracy/Silke	U2.13	2	5	wall	dog_office		Anda_Charlie
+56	sample_56	Tracy/Silke	U2.13	1	2	wall	dog_office		Anda_Charlie
+57	sample_57	Tracy/Silke	U2.12	5	1	door	dog_office		Anda_Charlie
+58	sample_58	Tracy/Silke	U2.12	4	2		dog_office	Anda's bed	Anda_Charlie
+59	sample_59	Tracy/Silke	U2.12	5	3	wall	dog_office		Anda_Charlie
+60	sample_60	Tracy/Silke Hallway	Dept entrance	1		hallway	hallway	L1	Anda_Charlie
+61	sample_61	Tracy/Silke Hallway	U2.12	2		hallway	hallway	Silke office	Anda_Charlie
+62	sample_62	Tracy/Silke Hallway	U2.13	3		hallway	hallway	Tracy office	Anda_Charlie
+63	sample_63	Tracy/Silke Hallway	U2.14	4		hallway	hallway	R1	Anda_Charlie
+64	sample_64	Tracy/Silke Hallway	U2.15	5		hallway	hallway	R2	Anda_Charlie
+65	sample_65	Tracy/Silke Hallway	U2.17/18	6		hallway	hallway	R3	Anda_Charlie
+66	sample_66	Elevator	main			middle	elevator		
+67	sample_67	Elevator	main			wall	elevator		
+68	sample_68	Elevator	banana			middle	elevator		
+69	sample_69	Elevator	banana			wall	elevator		
+70	sample_70	Elevator	cargo			middle	elevator		
+71	sample_71	Elevator	cargo			wall	elevator		
+72	sample_72	Main Entrance	left	1		main-entrance	main-entrance		
+73	sample_73	Main Entrance	middle	2		main-entrance	main-entrance		
+74	sample_74	Bret	U1.23			door	dog_office		ThorB
+75	sample_75	Bret	U1.23			wall	dog_office	Thor B's bed	ThorB
+76	sample_76	Janet	U3.85			door	dog_office		Cami
+77	sample_77	Janet	U3.85			wall	dog_office		Cami
+78	sample_78	Johannes	U3.92			door	nc_office	No dogs	No dogs
+79	sample_79	Johannes	U3.92			wall	nc_office	No dogs	No dogs
+80	sample_80	Matthias	U3.87			door	nc_office	No dogs	No dogs
+81	sample_81	Matthias	U3.87			wall	nc_office	No dogs	No dogs
+82	sample_82	Elena	U3.86			desk	nc_office	No dogs	cat
+83	sample_83	Cleanroom	B-1.31			middle	lab	No dogs	No dogs
+84	sample_84	Cleanroom	B-1.31			wall	lab	No dogs	No dogs
+85	negative_sample_gr1	NC				nc	nc		
+86	negative_sample_gr2	NC				nc	nc		
+87	negative_sample_gr3	NC				nc	nc		
+88	negative_sample_gr4	NC				nc	nc		
