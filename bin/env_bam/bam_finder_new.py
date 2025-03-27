@@ -72,7 +72,7 @@ bam_files = glob.glob(os.path.join(args.bam_directory, "*.bam"))
 bam_files.sort(key=lambda x: sort_sample_names(os.path.basename(x)))
 
 with open(args.output_file, mode='w', newline='') as outfile:
-    fieldnames = ['Sample', 'Chromosome', 'Position', 'Matches', 'Total Reads', 'Expected Nucleotide',
+    fieldnames = ['sample_id', 'Chromosome', 'Position', 'Matches', 'Total Reads', 'Expected Nucleotide',
                   'Nucleotides Found', 'Reference Base', 'Nucleotides Other MPI Dogs']
     writer = csv.DictWriter(outfile, fieldnames=fieldnames)
     writer.writeheader()
@@ -102,7 +102,7 @@ with open(args.output_file, mode='w', newline='') as outfile:
                             nucleotides_at_position, expected_nucleotide)
 
                 writer.writerow({
-                    'Sample': sample_name,
+                    'sample_id': sample_name,
                     'Chromosome': chromosome,
                     'Position': position,
                     'Matches': match_count,
@@ -114,7 +114,7 @@ with open(args.output_file, mode='w', newline='') as outfile:
                 })
             except ValueError as e:
                 writer.writerow({
-                    'Sample': sample_name,
+                    'sample_id': sample_name,
                     'Chromosome': chromosome,
                     'Position': position,
                     'Matches': 0,
