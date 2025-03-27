@@ -1,4 +1,4 @@
-Sample,Chromosome,Position,Matches,Total Reads,Expected Nucleotide,Nucleotides Found,Reference Base,Nucleotides Other MPI Dogs
+sample_id,Chromosome,Position,Matches,Total Reads,Expected Nucleotide,Nucleotides Found,Reference Base,Nucleotides Other MPI Dogs
 sample_1,NC_002008.4,557,0,679,G,A:679,A,A
 sample_1,NC_002008.4,1046,2,1198,A,G:1196 A:2,G,G
 sample_1,NC_002008.4,1204,0,128,C,T:128,T,T
