@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the base directory
-base_dir="${BASE_PATH}/data/dog_samples/processing"
+base_dir="${MPI_BASE_PATH}/data/dog_samples/processing"
 
 # Function to extract the sample name from the filename
 extract_sample_name() {

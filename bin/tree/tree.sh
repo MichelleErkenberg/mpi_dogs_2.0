@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Set working directory
-WORKDIR="$BASE_PATH/data/dog_samples/msa"
+WORKDIR="$MPI_BASE_PATH/data/dog_samples/msa"
 
 # Set output directory
-OUTDIR="$BASE_PATH/data/dog_samples/tree"
+OUTDIR="$MPI_BASE_PATH/data/dog_samples/tree"
 
 #create OUTDIR if it doesn't exist
 

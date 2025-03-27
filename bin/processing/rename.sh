@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Change to the correct directory
-cd "$BASE_PATH/data/dog_samples"
+cd "$MPI_BASE_PATH/data/dog_samples"
 
 for file in s_all_*_S*.bam; do
     # Extract the dog name

@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Define directories and reference file
-BAM_DIR="$BASE_PATH/data/dog_samples/processing/ChrM/MQ25/dedup"
-REF_FILE="$BASE_PATH/data/science_dogs/Canis_lupus_familiaris.fasta"
-SCRIPT_PATH="$BASE_PATH/bin/consensus/consensus_from_bam.pl"
+BAM_DIR="$MPI_BASE_PATH/data/dog_samples/processing/ChrM/MQ25/dedup"
+REF_FILE="$MPI_BASE_PATH/data/science_dogs/Canis_lupus_familiaris.fasta"
+SCRIPT_PATH="$MPI_BASE_PATH/bin/consensus/consensus_from_bam.pl"
 
 # Create the 'consensus' directory if it doesn't exist
-mkdir -p "$BASE_PATH/data/dog_samples/consensus"
+mkdir -p "$MPI_BASE_PATH/data/dog_samples/consensus"
 
 # Change to the 'consensus' directory
-cd "$BASE_PATH/data/dog_samples/consensus"
+cd "$MPI_BASE_PATH/data/dog_samples/consensus"
 
 # Loop through all BAM files in the specified directory
 for bam_file in "$BAM_DIR"/*.bam; do

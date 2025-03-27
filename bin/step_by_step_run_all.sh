@@ -1,13 +1,13 @@
 ##!/bin/bash
 
-read -p "change BASE_PATH?(n/y): " b
+read -p "change MPI_BASE_PATH?(n/y): " b
 if [[ "$b" == "n" ]]; then
-	export BASE_PATH=$(pwd)
-	echo "current BASE_PATH = "$BASE_PATH"" 
+	export MPI_BASE_PATH=$(pwd)
+	echo "current MPI_BASE_PATH = "$MPI_BASE_PATH"" 
 elif [[ "$b" == "y" ]]; then
-	read -p "change BASE_PATH to: " bn
-	export BASE_PATH="$bn"
-	echo "BASE_PATH changed to "$bn""	
+	read -p "change MPI_BASE_PATH to: " bn
+	export MPI_BASE_PATH="$bn"
+	echo "MPI_BASE_PATH changed to "$bn""	
 fi
 
 
@@ -61,8 +61,8 @@ elif [[ "$x" == "differences" ]]; then
 #using the ref dog genome for genome coordinates
 elif [[ "$x" == "coordinates" ]]; then
 
-	mkdir -p "$BASE_PATH/data/dog_samples/ref"
-	python3 bin/ref/ref_coor.py "$BASE_PATH/data/dog_samples/diff/replaced_seq.related_n.mpi_dogs.added_ref.aln" "$BASE_PATH/data/dog_samples/ref/ref_coordinates.csv" NC_002008.4 fasta
+	mkdir -p "$MPI_BASE_PATH/data/dog_samples/ref"
+	python3 bin/ref/ref_coor.py "$MPI_BASE_PATH/data/dog_samples/diff/replaced_seq.related_n.mpi_dogs.added_ref.aln" "$MPI_BASE_PATH/data/dog_samples/ref/ref_coordinates.csv" NC_002008.4 fasta
 	echo "genomic coordinates detected"
 
 #dogs were living in different offices, this script creates files with just the dogs that lived together 
@@ -81,8 +81,8 @@ elif [[ "$x" == "R" ]]; then
 
 
 #creates csv file with average radio for each dog by using all dog (except excluded onces)
-ENV_BAM_DIR="$BASE_PATH/data/dog_samples/env_bam"
-R_PREP_DIR="$BASE_PATH/data/dog_samples/R_prep"
+ENV_BAM_DIR="$MPI_BASE_PATH/data/dog_samples/env_bam"
+R_PREP_DIR="$MPI_BASE_PATH/data/dog_samples/R_prep"
 
 
 for folder in "$ENV_BAM_DIR"/*; do
@@ -103,8 +103,8 @@ done
 
 #uses the txt file with the location to sort those average radios into new csv files
 elif [[ "$x" == "split" ]]; then
-    TXT_FILE="$BASE_PATH/data/dog_samples/R_prep/dog_env_samples_24_v1.txt"
-    R_PREP_DIR="$BASE_PATH/data/dog_samples/R_prep"
+    TXT_FILE="$MPI_BASE_PATH/data/dog_samples/R_prep/dog_env_samples_24_v1.txt"
+    R_PREP_DIR="$MPI_BASE_PATH/data/dog_samples/R_prep"
 
     for rfolder in "$R_PREP_DIR"/*; do
         if [ -d "$rfolder" ]; then
@@ -117,7 +117,7 @@ elif [[ "$x" == "split" ]]; then
             for csv_file in "$rfolder"/R_prep_sample_vs_dog_*.csv; do
                 if [ -f "$csv_file" ]; then
                     csv_basename=$(basename "$csv_file")
-                    python3 "$BASE_PATH/bin/R_prep/env_place.py" \
+                    python3 "$MPI_BASE_PATH/bin/R_prep/env_place.py" \
                         "$csv_file" \
                         "$TXT_FILE" \
                         "$rfolder/R_split/"

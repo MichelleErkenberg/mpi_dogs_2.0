@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set the working directory
-work_dir="$BASE_PATH/data/dog_samples/msa"
-OUTDIR="$BASE_PATH/data/dog_samples/diff"
+work_dir="$MPI_BASE_PATH/data/dog_samples/msa"
+OUTDIR="$MPI_BASE_PATH/data/dog_samples/diff"
 
 cd "$work_dir" || exit 1
 

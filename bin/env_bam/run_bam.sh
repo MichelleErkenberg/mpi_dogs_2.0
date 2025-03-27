@@ -1,11 +1,11 @@
 #!/bin/bash
-source "$BASE_PATH/tmp/user_input.sh"
+source "$MPI_BASE_PATH/tmp/user_input.sh"
 
 # Creating and defining new env_bam file as csv output file
-mkdir -p "$BASE_PATH/data/dog_samples/env_bam"
-env_bam="$BASE_PATH/data/dog_samples/env_bam"
-export bam_file="$BASE_PATH/data/env_samples/quicksand.v2/out/Canidae/fixed/3-deduped/"
-office_file="$BASE_PATH/data/dog_samples/ref"
+mkdir -p "$MPI_BASE_PATH/data/dog_samples/env_bam"
+env_bam="$MPI_BASE_PATH/data/dog_samples/env_bam"
+export bam_file="$MPI_BASE_PATH/data/env_samples/quicksand.v2/out/Canidae/fixed/3-deduped/"
+office_file="$MPI_BASE_PATH/data/dog_samples/ref"
 
 
 while true; do

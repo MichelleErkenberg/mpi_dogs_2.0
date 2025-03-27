@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Path to the extraction script and reference coordinate file
-extract_script="$BASE_PATH/bin/ref/extract.sh"
-FILE="$BASE_PATH/data/dog_samples/ref/ref_coordinates.csv"
-OUTDIR="$BASE_PATH/data/dog_samples/ref"
+extract_script="$MPI_BASE_PATH/bin/ref/extract.sh"
+FILE="$MPI_BASE_PATH/data/dog_samples/ref/ref_coordinates.csv"
+OUTDIR="$MPI_BASE_PATH/data/dog_samples/ref"
 
 while true; do
 
@@ -31,44 +31,44 @@ if [[ "$x" == "raw" ]]; then
     echo "Continue to compare each dog office dog against each other."
     # Office 1
     # Comparing all the dogs in office 1 for 4 dogs
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/4dogs.csv" "$OUTDIR/office_container/4dogs.Heidi.csv" "Heidi"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/4dogs.csv" "$OUTDIR/office_container/4dogs.Vito.csv" "Vito"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/4dogs.csv" "$OUTDIR/office_container/4dogs.Urza.csv" "Urza"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/4dogs.csv" "$OUTDIR/office_container/4dogs.Fritzy.csv" "Fritzy"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/4dogs.csv" "$OUTDIR/office_container/4dogs.Heidi.csv" "Heidi"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/4dogs.csv" "$OUTDIR/office_container/4dogs.Vito.csv" "Vito"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/4dogs.csv" "$OUTDIR/office_container/4dogs.Urza.csv" "Urza"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/4dogs.csv" "$OUTDIR/office_container/4dogs.Fritzy.csv" "Fritzy"
 
     # Comparing all the dogs in office 1 for 5 dogs
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/5dogs.csv" "$OUTDIR/office_container/5dogs.Heidi.csv" "Heidi"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/5dogs.csv" "$OUTDIR/office_container/5dogs.Vito.csv" "Vito"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/5dogs.csv" "$OUTDIR/office_container/5dogs.Urza.csv" "Urza"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/5dogs.csv" "$OUTDIR/office_container/5dogs.Fritzy.csv" "Fritzy"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/5dogs.csv" "$OUTDIR/office_container/5dogs.Cami.csv" "Cami"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/5dogs.csv" "$OUTDIR/office_container/5dogs.Heidi.csv" "Heidi"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/5dogs.csv" "$OUTDIR/office_container/5dogs.Vito.csv" "Vito"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/5dogs.csv" "$OUTDIR/office_container/5dogs.Urza.csv" "Urza"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/5dogs.csv" "$OUTDIR/office_container/5dogs.Fritzy.csv" "Fritzy"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/5dogs.csv" "$OUTDIR/office_container/5dogs.Cami.csv" "Cami"
 
     # Office 2
     # Comparing all the dogs in office 2 for 2 dogs
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_thorA.lily/2dogs.csv" "$OUTDIR/office_thorA.lily/2dogs.Lily.csv" "Lily"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_thorA.lily/2dogs.csv" "$OUTDIR/office_thorA.lily/2dogs.ThorA.csv" "ThorA"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_thorA.lily/2dogs.csv" "$OUTDIR/office_thorA.lily/2dogs.Lily.csv" "Lily"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_thorA.lily/2dogs.csv" "$OUTDIR/office_thorA.lily/2dogs.ThorA.csv" "ThorA"
 
     # Comparing all the dogs in office 2 for 3 dogs
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_thorA.lily/3dogs.csv" "$OUTDIR/office_thorA.lily/3dogs.Lily.csv" "Lily"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_thorA.lily/3dogs.csv" "$OUTDIR/office_thorA.lily/3dogs.ThorA.csv" "ThorA"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_thorA.lily/3dogs.csv" "$OUTDIR/office_thorA.lily/3dogs.Cami.csv" "Cami"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_thorA.lily/3dogs.csv" "$OUTDIR/office_thorA.lily/3dogs.Lily.csv" "Lily"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_thorA.lily/3dogs.csv" "$OUTDIR/office_thorA.lily/3dogs.ThorA.csv" "ThorA"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_thorA.lily/3dogs.csv" "$OUTDIR/office_thorA.lily/3dogs.Cami.csv" "Cami"
 
 elif [[ "$x" == "exclude" ]]; then
     read -p "Please decide whether to keep ThorA or Anda and ThorB or Cami: " a b 
-    echo "a='$a'" > "$BASE_PATH/tmp/user_input.sh"
-    echo "b='$b'" >> "$BASE_PATH/tmp/user_input.sh" #to use this variables in other scripts
+    echo "a='$a'" > "$MPI_BASE_PATH/tmp/user_input.sh"
+    echo "b='$b'" >> "$MPI_BASE_PATH/tmp/user_input.sh" #to use this variables in other scripts
     # Extracting all dogs (always decide between closely related ones)
     mkdir -p "$OUTDIR/all_dogs_with_${a}_${b}"
     bash "$extract_script" "$FILE" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$a" "$b" "Fritzy" "Heidi" "Urza" "Vito" "Lily" "Charlie" 
 
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.${a}.csv" "$a"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.${b}.csv" "$b"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.Heidi.csv" "Heidi"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.Fritzy.csv" "Fritzy"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.Vito.csv" "Vito"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.Urza.csv" "Urza"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.Lily.csv" "Lily"
-    python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.Charlie.csv" "Charlie"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.${a}.csv" "$a"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.${b}.csv" "$b"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.Heidi.csv" "Heidi"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.Fritzy.csv" "Fritzy"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.Vito.csv" "Vito"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.Urza.csv" "Urza"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.Lily.csv" "Lily"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_with_${a}_${b}.csv" "$OUTDIR/all_dogs_with_${a}_${b}/all_dogs_${a}${b}.Charlie.csv" "Charlie"
 
     read -p "Also merge Lily into Anda/ThorA data (n/y)?: " l
     if [[ "$l" == "y" ]]; then
@@ -76,13 +76,13 @@ elif [[ "$x" == "exclude" ]]; then
         bash "$extract_script" "$FILE" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$a" "$b" "Fritzy" "Heidi" "Urza" "Vito" "Charlie" 
         echo "Extraction without Lily and $a and $b completed."
 
-        python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.${a}.csv" "$a"
-        python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.${b}.csv" "$b"
-        python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.Heidi.csv" "Heidi"
-        python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.Fritzy.csv" "Fritzy"
-        python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.Vito.csv" "Vito"
-        python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.Urza.csv" "Urza"
-        python3 "$BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.Charlie.csv" "Charlie"
+        python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.${a}.csv" "$a"
+        python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.${b}.csv" "$b"
+        python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.Heidi.csv" "Heidi"
+        python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.Fritzy.csv" "Fritzy"
+        python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.Vito.csv" "Vito"
+        python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.Urza.csv" "Urza"
+        python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}_${b}_without_Lily.csv" "$OUTDIR/all_dogs_${a}_${b}_without_Lily/all_dogs_${a}${b}woL.Charlie.csv" "Charlie"
     fi
 else
     echo "Invalid option. Please choose 'raw' or 'exclude'."

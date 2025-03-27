@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Path
-bam_dir="$BASE_PATH/data/dog_samples/processing/bam_files"
-chrM_dir="$BASE_PATH/data/dog_samples/processing/ChrM"
+bam_dir="$MPI_BASE_PATH/data/dog_samples/processing/bam_files"
+chrM_dir="$MPI_BASE_PATH/data/dog_samples/processing/ChrM"
 
 ### Step 1: ChrM Extraction ###
 mkdir -p "$chrM_dir"

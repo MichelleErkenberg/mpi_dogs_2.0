@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Source directory
-source_dir="$BASE_PATH/data/dog_samples/consensus"
+source_dir="$MPI_BASE_PATH/data/dog_samples/consensus"
 
 # Destination directory
-dest_dir="$BASE_PATH/data/dog_samples/msa/mask"
+dest_dir="$MPI_BASE_PATH/data/dog_samples/msa/mask"
 
 # Create the destination directory if it doesn't exist
 mkdir -p "$dest_dir"

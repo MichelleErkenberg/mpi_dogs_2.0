@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the working directory
-work_dir="$BASE_PATH/data/dog_samples/msa/mask"
+work_dir="$MPI_BASE_PATH/data/dog_samples/msa/mask"
 
 # Ensure the working directory exists
 mkdir -p "$work_dir"
