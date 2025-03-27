@@ -5,7 +5,7 @@ library(ggplot2)
 setwd("~/github/mpi_dogs_2.0/")
 
 # Read the main CSV file with dog data
-dt.main <- fread('data/dog_samples/R_prep/all_dogs_with_ThorA_Cami_without_Lily/R_prep_sample_vs_dog_all_dogs_with_ThorA_Cami_without_Lily_2snp.csv', na.strings = c('-', 'NA', ''))
+dt.main <- fread('data/dog_samples/R_prep/all_dogs_with_ThorA_Cami_without_Lily/R_prep_sample_vs_dog_all_dogs_with_ThorA_Cami_without_Lily_10snp.csv', na.strings = c('-', 'NA', ''))
 
 
 # Read the TXT file with location categories
@@ -67,5 +67,5 @@ p <- ggplot() +
 print(p)
 
 # Save the plot
-ggsave("figures/dogs_categorized_2snp_50readsdeduped.png", p, width = 24, height = 20, limitsize = FALSE)
+ggsave("figures/dogs_categorized_10snp_50readsdeduped.png", p, width = 24, height = 20, limitsize = FALSE)
 

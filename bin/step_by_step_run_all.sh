@@ -53,7 +53,7 @@ elif [[ "$x" == "tree" ]]; then
 	bash bin/tree/tree.sh
 	echo "phylogenentic tree created"
 
-#finding differences and replace the n's (also see diff.sh for more details); it takes the latest aln so far and trims it to 16138bp; afterwards closely related dog sequences are extracted (manually) and differences are highlighted in an csv file; the n's from our dogs are than replaced (if possible) with the bases from the replated dogs; that leads to an csv file with replaced n's and in the long term to an fasta file with out dogs + replaced possions 
+#finding differences and replace the n's 
 elif [[ "$x" == "differences" ]]; then
 	bash bin/diff/diff.sh
 	echo "differences found, N's replaced"
@@ -126,9 +126,6 @@ elif [[ "$x" == "split" ]]; then
         fi
     done
 
-# for running the entire script
-elif [[ "$x" == "all" ]]; then
-	bash bin/run_all.sh
 
 else
 	echo "avalible processes:"
@@ -143,7 +140,6 @@ else
 	echo "snps"
 	echo "R"
 	echo "split"
-	echo "all"
 fi
 
 read -p "continue process (y/n)?: " c

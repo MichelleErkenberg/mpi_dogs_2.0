@@ -2,12 +2,11 @@ library(data.table)
 library(ggplot2)
 
 # Set working directory
-setwd("~/github/mpi_dogs/")
+setwd("~/github/mpi_dogs_2.0/")
 
 # Read the main CSV file with dog data, leaving empty fields as NA
-#dt.main <- fread('data/dog_samples/R_prep/all_dogs_ACwoL/R_prep_sample_vs_dog_ACwoL_2snp_renamed.csv', na.strings = c('-', 'NA', ''))
-#dt.main <- fread('data/dog_samples/R_prep/all_dogs_ACwoL/R_prep_sample_vs_dog_ACwoL_5snp_renamed.csv', na.strings = c('-', 'NA', ''))
-dt.main <- fread('data/dog_samples/R_prep/all_dogs_ACwoL/R_prep_sample_vs_dog_ACwoL_10snp_renamed.csv', na.strings = c('-', 'NA', ''))
+
+dt.main <- fread('data/dog_samples/R_prep/all_dogs_with_ThorA_Cami_without_Lily/R_prep_sample_vs_dog_all_dogs_with_ThorA_Cami_without_Lily_10snp.csv', na.strings = c('-', 'NA', ''))
 
 # Read the TXT file with location categories
 dt.categories <- fread('data/dog_samples/R_prep/sample_location.txt', na.strings = c('-', 'NA', ''))

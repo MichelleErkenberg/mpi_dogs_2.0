@@ -3,7 +3,7 @@ library(ggplot2)
 library(dplyr)
 
 ## Set working directory
-setwd("~/github/mpi_dogs/")
+setwd("~/github/mpi_dogs_2.0/")
 
 ## Read in the txt file with dog office and category information
 dt.dog_office <- fread('data/dog_samples/R_prep/dog_env_samples_24_v1.txt', na.strings = c('-','NA',''))
