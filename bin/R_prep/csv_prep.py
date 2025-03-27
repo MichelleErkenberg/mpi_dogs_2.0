@@ -18,7 +18,7 @@ def process_csv(input_pattern, output_file, threshold):
         df = pd.read_csv(file)
         
         # Group the data by Sample and sum Matches and Total Reads
-        grouped = df.groupby('Sample').agg({'Matches': 'sum', 'Total Reads': 'sum'})
+        grouped = df.groupby('sample_id').agg({'Matches': 'sum', 'Total Reads': 'sum'})
         
         # Apply threshold to Total Reads
         grouped = grouped[grouped['Total Reads'] >= threshold]
@@ -34,7 +34,7 @@ def process_csv(input_pattern, output_file, threshold):
     
     final_df.sort_index(key=lambda x: x.map(sort_sample_names), inplace=True)
     
-    final_df.index.name = 'Sample'
+    final_df.index.name = 'sample_id'
     
     final_df.to_csv(output_file)
     

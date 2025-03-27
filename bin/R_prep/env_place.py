@@ -32,17 +32,17 @@ def process_files(csv_file, txt_file, output_dir):
         output_file = os.path.join(output_dir, f"{safe_office_name}.csv")
         with open(csv_file, 'r') as f_in, open(output_file, 'w', newline='') as f_out:
             reader = csv.DictReader(f_in)
-            fieldnames = ['Sample', 'office', 'x', 'y'] + reader.fieldnames[1:]
+            fieldnames = ['sample_id', 'office', 'x', 'y'] + reader.fieldnames[1:]
             writer = csv.DictWriter(f_out, fieldnames=fieldnames)
             writer.writeheader()
 
             for row in reader:
-                if row['Sample'] in sample_data and sample_data[row['Sample']]['office'] == office:
+                if row['sample_id'] in sample_data and sample_data[row['sample_id']]['office'] == office:
                     new_row = {
-                        'Sample': row['Sample'],
+                        'sample_id': row['sample_id'],
                         'office': office,
-                        'x': sample_data[row['Sample']]['x'],
-                        'y': sample_data[row['Sample']]['y']
+                        'x': sample_data[row['sample_id']]['x'],
+                        'y': sample_data[row['sample_id']]['y']
                     }
                     new_row.update({k: row[k] for k in reader.fieldnames[1:]})
                     writer.writerow(new_row)
