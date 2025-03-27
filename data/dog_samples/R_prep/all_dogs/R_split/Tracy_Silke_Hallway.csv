@@ -1,7 +1,6 @@
-Sample,office,x,y,Vito,Lily,Urza,Heidi,Fritzy,ThorA,Cami
-sample_60,Tracy/Silke Hallway,1,,,,,,,0.0,0.03571428571428571
-sample_61,Tracy/Silke Hallway,2,,,,0.0,,,0.043859649122807015,0.05
-sample_62,Tracy/Silke Hallway,3,,,,,,,0.0,
-sample_63,Tracy/Silke Hallway,4,,,,,,,,0.0
-sample_64,Tracy/Silke Hallway,5,,,,,,,,0.08333333333333333
-sample_65,Tracy/Silke Hallway,6,,,,,,,0.02631578947368421,0.0
+Sample,office,x,y,Cami,Fritzy,Heidi,Lily,ThorA,Urza,Vito
+sample_60,Tracy/Silke Hallway,1,,0.03571428571428571,,,,,,
+sample_61,Tracy/Silke Hallway,2,,0.05,,,,0.8333333333333334,0.0,
+sample_63,Tracy/Silke Hallway,4,,0.0,,,,,,
+sample_64,Tracy/Silke Hallway,5,,0.08333333333333333,,,,,,
+sample_65,Tracy/Silke Hallway,6,,0.0,,,,,,
