@@ -94,6 +94,7 @@ python3 R_prep/csv_prep.py "$BASE_PATH/data/dog_samples/env_bam/all_env_*.csv" "
 ```
 
 ## Python packages
+Python 3 is recommended.
 
 * pandas
 * csv
