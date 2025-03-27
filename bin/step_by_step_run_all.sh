@@ -142,6 +142,7 @@ else
 	echo "offices"
 	echo "snps"
 	echo "R"
+	echo "split"
 	echo "all"
 fi
 

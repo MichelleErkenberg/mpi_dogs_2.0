@@ -4,8 +4,10 @@ import sys
 def is_different(value1, value2):
     """
     Compare two values and return True if they are different.
-    This function treats "-" as a regular value.
+    This function treats "-" as a regular value and "N" as equivalent to any other value.
     """
+    if value1 == "n" or value2 == "n":
+        return False
     return value1 != value2
 
 def find_unique_positions(file_path, reference_column):

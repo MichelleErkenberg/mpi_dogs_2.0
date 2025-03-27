@@ -1,0 +1,85 @@
+sample_id	location
+sample_1	Dog Office (Container)
+sample_2	Dog Office (Container)
+sample_3	Dog Office (Container)
+sample_4	Dog Office (Container)
+sample_5	Dog Office (Container)
+sample_6	Dog Office (Container)
+sample_7	Dog Office (Container)
+sample_8	Dog Office (Container)
+sample_9	Dog Office (Container)
+sample_10	Dog Office (Container)
+sample_11	Dog Office (Container)
+sample_12	Dog Office (Container)
+sample_13	Dog Office (Container)
+sample_14	Dog Office (Container)
+sample_15	Dog Office (Container)
+sample_16	Dog Office (Container)
+sample_17	Dog Office (Container)
+sample_18	Dog Office (Container)
+sample_19	Dog Office (Container)
+sample_20	Negativ Control
+sample_21	Dog Office (Container)
+sample_22	Dog Office (Container)
+sample_23	Dog Office (Container)
+sample_24	Dog Office (Container)
+sample_25	Dog Office (Container)
+sample_26	Dog Office (Container)
+sample_27	Dog Office (Container)
+sample_28	Dog Office (Container)
+sample_29	Lab (PCR Lab)
+sample_30	Lab (PCR Lab)
+sample_31	Lab (PCR Lab)
+sample_32	Lab (PCR Lab)
+sample_33	Lab (PCR Lab)
+sample_34	Lab (PCR Lab)
+sample_35	Dog Office (Lily/ThorA)
+sample_36	Dog Office (Lily/ThorA)
+sample_37	Dog Office (Lily/ThorA)
+sample_38	Dog Office (Lily/ThorA)
+sample_39	Dog Office (Lily/ThorA)
+sample_40	Dog Office (Lily/ThorA)
+sample_41	Dog Office (Lily/ThorA)
+sample_42	Dog Office (Lily/ThorA)
+sample_43	Dog Office (Lily/ThorA)
+sample_44	Dog Office (Lily/ThorA)
+sample_45	Hallway (Lily/ThorA)
+sample_46	Hallway (Lily/ThorA)
+sample_47	Hallway (Lily/ThorA)
+sample_48	Hallway (Lily/ThorA)
+sample_49	Hallway (Lily/ThorA)
+sample_50	Non-Dog Office
+sample_51	Non-Dog Office
+sample_52	Dog Office (Anda/Charlie)
+sample_53	Dog Office (Anda/Charlie)
+sample_54	Dog Office (Anda/Charlie)
+sample_55	Dog Office (Anda/Charlie)
+sample_56	Dog Office (Anda/Charlie)
+sample_57	Dog Office (Anda/Charlie)
+sample_58	Dog Office (Anda/Charlie)
+sample_59	Dog Office (Anda/Charlie)
+sample_60	Hallway (Anda/Charlie)
+sample_61	Hallway (Anda/Charlie)
+sample_62	Hallway (Anda/Charlie)
+sample_63	Hallway (Anda/Charlie)
+sample_64	Hallway (Anda/Charlie)
+sample_65	Hallway (Anda/Charlie)
+sample_66	Elevator
+sample_67	Elevator
+sample_68	Elevator
+sample_69	Elevator
+sample_70	Elevator
+sample_71	Elevator
+sample_72	Main Entrance
+sample_73	Main Entrance
+sample_74	Non-Dog Office
+sample_75	Non-Dog Office
+sample_76	Non-Dog Office
+sample_77	Non-Dog Office
+sample_78	Non-Dog Office
+sample_79	Non-Dog Office
+sample_80	Non-Dog Office
+sample_81	Non-Dog Office
+sample_82	Non-Dog Office
+sample_83	Lab (Cleanroom)
+sample_84	Lab (Cleanroom)
