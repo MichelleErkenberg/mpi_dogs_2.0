@@ -7,7 +7,7 @@ setwd("~/github/mpi_dogs_2.0/")
 
 ### ------------------Heatmaps container office-------------------
 
-data_container <- read.csv("data/dog_samples/R_prep/all_dogs/R_split/Container.csv")
+data_container <- read.csv("data/dog_samples/R_prep/all_dogs/R_split_10snp/Container.csv")
 
 # Heatmap for each Container dog
 heatmap_heidi <- ggplot(data_container, aes(x = x, y = y, fill = Heidi)) +
@@ -83,7 +83,7 @@ combined_plot_container <- grid.arrange(heatmap_fritzy, heatmap_heidi, heatmap_u
 ### ---------------------------heatmaps for Thor A and Lily office ----------------------
 
 
-data_thorA_lily <- read.csv("data/dog_samples/R_prep/all_dogs/R_split/Mimi_Linda.csv")
+data_thorA_lily <- read.csv("data/dog_samples/R_prep/all_dogs/R_split_10snp/Mimi_Linda.csv")
 
 
 # Heatmap for each dog

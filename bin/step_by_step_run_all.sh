@@ -110,17 +110,23 @@ elif [[ "$x" == "split" ]]; then
         if [ -d "$rfolder" ]; then
             rfolder_name=$(basename "$rfolder")
             
-            # Neuen R_split Ordner erstellen
-            mkdir -p "$rfolder/R_split"
-            
-            # CSV-Verarbeitung für jede Datei im Ordner
+            # Process each CSV file in the folder
             for csv_file in "$rfolder"/R_prep_sample_vs_dog_*.csv; do
                 if [ -f "$csv_file" ]; then
+                    # Extract the SNP suffix (e.g., 0snps, 2snps)
                     csv_basename=$(basename "$csv_file")
+                    suffix=${csv_basename##*_}  # Get everything after last underscore
+                    suffix=${suffix%.csv}       # Remove .csv extension
+                    
+                    # Create dedicated split directory for this SNP variant
+                    split_dir="$rfolder/R_split_${suffix}"
+                    mkdir -p "$split_dir"
+                    
+                    # Run processing with the specific output directory
                     python3 "$MPI_BASE_PATH/bin/R_prep/env_place.py" \
                         "$csv_file" \
                         "$TXT_FILE" \
-                        "$rfolder/R_split/"
+                        "$split_dir/"
                 fi
             done
         fi
