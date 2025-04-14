@@ -10,9 +10,13 @@ while true; do
 read -p "Use all dogs for office 1 and 2 OR filtering data to exclude dogs (raw/exclude)?: " x
 
 if [[ "$x" == "raw" ]]; then
-    # Creating directories for dog office 1 and 2	
+    # Creating directories for dog office 1 and 2
+    mkdir -p "$OUTDIR/all_dogs"          #all of our mpi dogs included
     mkdir -p "$OUTDIR/office_container"  #office 1
     mkdir -p "$OUTDIR/office_thorA.lily" #office 2
+
+    # extraction for all of your dogs
+    bash "$extract_script" "$FILE" "$OUTDIR/all_dogs/all_dogs.csv" "Heidi" "Vito" "Urza" "Fritzy" "Cami" "ThorA" "ThorB" "Anda" "Lily" "Charlie"
 
     # The references position is always extracted 
     # First extraction for office 1 and 4 dogs
@@ -29,6 +33,19 @@ if [[ "$x" == "raw" ]]; then
 
     # Second step - comparing dogs
     echo "Continue to compare each dog office dog against each other."
+
+    #all dogs
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Heidi.csv" "Heidi"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Vito.csv" "Vito"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Urza.csv" "Urza"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Fritzy.csv" "Fritzy"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Cami.csv" "Cami"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Heidi.csv" "ThorA"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Vito.csv" "ThorB"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Urza.csv" "Lily"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Fritzy.csv" "Anda"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Cami.csv" "Charlie"
+
     # Office 1
     # Comparing all the dogs in office 1 for 4 dogs
     python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/office_container/4dogs.csv" "$OUTDIR/office_container/4dogs.Heidi.csv" "Heidi"

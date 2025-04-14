@@ -77,7 +77,7 @@ elif [[ "$x" == "snps" ]]; then
 #prepairing the environmental dog data to process them using R 
 #creates a csv file with the average radio for each dog in the sample
 elif [[ "$x" == "R" ]]; then
-	read -p "choose required amount of snps: " s
+	read -p "choose required amount of total reads for each sample: " s
 
 
 #creates csv file with average radio for each dog by using all dog (except excluded onces)
@@ -99,7 +99,7 @@ for folder in "$ENV_BAM_DIR"/*; do
             "$s"
     fi
 done
-	echo "environmental data processed with "$s" SNPs"
+	echo "environmental data processed with "$s" total reads"
 
 #uses the txt file with the location to sort those average radios into new csv files
 elif [[ "$x" == "split" ]]; then
