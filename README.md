@@ -4,7 +4,7 @@ This project was conducted with eight canines residing in their respective owner
 
 ## One script to rule them all
 
-The step_by_step_run_all script should be used to process the data. This script will guide you according to the "Step-by-step explanation of the script". Please be sure to run this script from the directory above /bin.
+The step_by_step_run_all script should be used to process the data. This script will guide you according to the "Step-by-step explanation of the script". It is recommended to process the data while using the script. Please be sure to run this script from the directory above /bin.
 ```
 bash /bin/step_by_step_run_all.sh
 ```
@@ -14,8 +14,8 @@ bash /bin/step_by_step_run_all.sh
 
 ### 1. Processing (processing and count)
 
-Please copy your *.bam files to data/dog_samples/processing/bam_files or change them in the script.
-The first step was to process the data. The raw data was filtered for mitochondrial DNA (mtDNA). Furthermore, a map quality of 25% was required and only deduplicated data was allowed.
+Please copy your *.bam files to data/dog_samples/processing/bam_files.
+The first step was to process the data. The raw data is filtered for mitochondrial DNA (mtDNA). Furthermore, a map quality of 25% was required and only deduplicated data was allowed. 
 ```
 bash processing/filter.sh
 ```
@@ -28,7 +28,7 @@ bash processing/sequence_counter.sh
 
 ### 2. Consensus (consensus)
 
-Using the processed data to call a consensus sequence for each dog is done by using Matthias' perl script and a dog reference FASTA. Be aware to add your reference *.fasta to /data/science_dogs or change the Path. Note to add your reference *.fasta to /data/science_dogs or change the path. In addition, the undetermined data has been deleted.
+Using the processed data to call a consensus sequence for each dog is done by using Matthias' perl script and a dog reference FASTA. Note to add your reference *.fasta to /data/science_dogs. In addition, the undetermined data has been deleted.
 ```
 bash consensus/consensus.sh	
 ```
@@ -52,7 +52,7 @@ bash msa/msa.sh
 
 ### 4. Phylogenetic tree (tree)
 
-Using the alignment files, a phylogenetic tree was generated for the MPI dogs only, and for the MPI dogs, the previously published dogs, and the reference dog. Therefore FastTree was used.
+Using the alignment files, a phylogenetic tree was generated for the MPI dogs only and for the MPI dogs, the previously published dogs, and the reference dog. FastTree was used for this process.
 ```
 bash tree/tree.sh
 ```
