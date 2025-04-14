@@ -9,7 +9,7 @@ office_file="$MPI_BASE_PATH/data/dog_samples/ref"
 
 
 while true; do
-    read -p "Only compare offices or excluded files (raw/exclude)?: " e 
+    read -p "Only compare offices or exclude files (raw/exclude)?: " e 
     if [[ "$e" == "raw" ]]; then
         # All dogs office files
         declare -A dogs=(

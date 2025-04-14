@@ -40,11 +40,11 @@ if [[ "$x" == "raw" ]]; then
     python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Urza.csv" "Urza"
     python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Fritzy.csv" "Fritzy"
     python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Cami.csv" "Cami"
-    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Heidi.csv" "ThorA"
-    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Vito.csv" "ThorB"
-    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Urza.csv" "Lily"
-    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Fritzy.csv" "Anda"
-    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Cami.csv" "Charlie"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.ThorA.csv" "ThorA"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.ThorB.csv" "ThorB"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Lily.csv" "Lily"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Anda.csv" "Anda"
+    python3 "$MPI_BASE_PATH/bin/ref/diff_finder.py" "$OUTDIR/all_dogs/all_dogs.csv" "$OUTDIR/all_dogs/all_dogs.Charlie.csv" "Charlie"
 
     # Office 1
     # Comparing all the dogs in office 1 for 4 dogs
