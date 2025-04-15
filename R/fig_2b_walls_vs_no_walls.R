@@ -101,7 +101,7 @@ combined_plots <- plot_grid(
 print(combined_plots)
 
 ## Saving the combined plot
-ggsave("figures/walls_vs_no_walls.png", combined_plots, width = 16, height = 16)
+ggsave("figures/fig_2b.png", combined_plots, width = 16, height = 16)
 
 
 

@@ -92,7 +92,7 @@ combined_plot <- grid.arrange(
 )
 
 ## Save combined plot
-#ggsave("figures/combined_samples_count_and_reads.png", combined_plot, width = 16, height = 16)
+ggsave("figures/fig_1.png", combined_plot, width = 16, height = 16)
 
 ## Save individual plots
 bar_plots <- grid.arrange(plot_dog_office, plot_non_dog_office, ncol = 2)

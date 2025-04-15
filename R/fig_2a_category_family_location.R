@@ -102,7 +102,7 @@ ggplot(dt.tax_filtered, aes(x = ReadsDeduped, y = CategoryLabelWithCount, fill =
   scale_fill_manual(values = custom_colors)
 
 ## Save the plot
-ggsave("figures/category_family_distribution.png", width = 12, height = 10)
+ggsave("figures/fig_2a.png", width = 12, height = 10)
 
 
 

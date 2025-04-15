@@ -77,7 +77,7 @@ print(heatmap_vito)
 print(heatmap_fritzy)
 print(heatmap_urza)
 combined_plot_container <- grid.arrange(heatmap_fritzy, heatmap_heidi, heatmap_urza, heatmap_vito, ncol = 2)
-#ggsave("figures/container_office_dogs_heatmap.png", combined_plot_container, width = 16, height = 16)
+#ggsave("figures/fig_3a.png", combined_plot_container, width = 16, height = 16)
 
 
 ### ---------------------------heatmaps for Thor A and Lily office ----------------------
@@ -123,4 +123,4 @@ heatmap_thorA <- ggplot(data_thorA_lily, aes(x = x, y = y, fill = ThorA)) +
 print(heatmap_lily)
 print(heatmap_thorA)
 combined_plot_thorA_lily <- grid.arrange(heatmap_lily, heatmap_thorA, ncol = 1)
-#ggsave("figures/thorA_lily_office_dogs_heatmap.png", combined_plot_thorA_lily, width = 16, height = 16)
+#ggsave("figures/fig_3b.png", combined_plot_thorA_lily, width = 16, height = 16)
