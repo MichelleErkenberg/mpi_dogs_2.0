@@ -58,6 +58,10 @@ setorder(dt.long, location, sample_number)
 dt.long$location <- factor(dt.long$location, levels = custom_order)
 dt.combined_reads$location <- factor(dt.combined_reads$location, levels = custom_order)
 
+#reorder sample_id
+dt.long$sample_id <- factor(dt.long$sample_id, levels = paste0("sample_", c(1:85)))
+dt.combined_reads$sample_id <- factor(dt.combined_reads$sample_id, levels = paste0("sample_", c(1:85)))
+
 # Create the bar plot with asterisks for NA values
 p <- ggplot() +
   # Add bars only for non-NA values
