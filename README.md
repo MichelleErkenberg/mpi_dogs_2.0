@@ -115,13 +115,14 @@ Samples were collected from different locations. To highlight the amount of dog 
 ```
 R/dog_catagorized_readsdeduped.R
 ```
-<img width="4800" height="4800" alt="fig1" src="https://github.com/user-attachments/assets/7d780132-6648-476b-9cc7-4a9829a92bd5" />
-
 
 As the data contains samples with no data points or low amounts of DNA, these samples need to be sorted out. For SNP validation, the position of the SNPs must be covered by at least 10 sequences, regardless of whether the SNP occurs in them or not. There must also be at least 50 ReadsDeduped in the raw data. 
 After this filtering, different locations where the dogs might be present are examined. 
 
 Samples that are filtered out are highlighted with an asterisk. The data shows that each dog is mainly present in its owner's office. Based on this knowledge, further research was conducted.
+
+<img width="4800" height="4800" alt="fig1" src="https://github.com/user-attachments/assets/7d780132-6648-476b-9cc7-4a9829a92bd5" />
+Samples were taken in the Offices of the dog owner (Dog Offices) and in Offices were dogs were not expected (Non-Dog Offices). The barplot highlights the amount of samples were each Family was detected.  Out of all samples mainly homindae DNA and candidae DNA was detected. Felicae and suidae DNA was detected, but in lower number. The data show that it is possible to diferanciate between Dog and Non-Dog Offices based on the amount DNA. 
 
 ### Headmaps
 
