@@ -122,7 +122,7 @@ After this filtering, different locations where the dogs might be present are ex
 Samples that are filtered out are highlighted with an asterisk. The data shows that each dog is mainly present in its owner's office. Based on this knowledge, further research was conducted.
 
 <img width="4800" height="4800" alt="fig1" src="https://github.com/user-attachments/assets/7d780132-6648-476b-9cc7-4a9829a92bd5" />
-Samples were taken in the Offices of the dog owner (Dog Offices) and in Offices were dogs were not expected (Non-Dog Offices). The barplot highlights the amount of samples were each Family was detected.  Out of all samples mainly homindae DNA and candidae DNA was detected. Felicae and suidae DNA was detected, but in lower number. The data show that it is possible to diferanciate between Dog and Non-Dog Offices based on the amount DNA. 
+Samples were taken in the offices of dog owners (Dog Offices) and in offices where dogs were not expected (Non-Dog Offices). The bar plot shows the total number of samples in which each family was detected, using defined filtering parameters.  Out of all the samples, mainly homindian DNA and candida DNA was detected. Felicae and suidae DNA was also detected, but in lower numbers. The pie chart shows the percentage corresponding to each family. The difference between Canidae and Homindae DNA is especially high, indicating the possibility of differentiating between Dog and Non-Dog Offices based on the amount of DNA present.
 
 ### Headmaps
 
