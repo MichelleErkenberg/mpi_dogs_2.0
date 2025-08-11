@@ -113,7 +113,7 @@ R was used for data visualization. For further data analysis, we decided to grou
 
 Samples were collected from different locations. To highlight the amount of dog DNA at each location, the following R script can be used
 ```
-R/dog_catagorized_readsdeduped.R
+R/subfig_1_dogs_catagorized_readsdeduped.R
 ```
 
 As the data contains samples with no data points or low amounts of DNA, these samples need to be sorted out. For SNP validation, the position of the SNPs must be covered by at least 10 sequences, regardless of whether the SNP occurs in them or not. There must also be at least 50 ReadsDeduped in the raw data. 
@@ -121,14 +121,15 @@ After this filtering, different locations where the dogs might be present are ex
 
 Samples that are filtered out are highlighted with an asterisk. The data shows that each dog is mainly present in its owner's office. Based on this knowledge, further research was conducted.
 
-<img width="3600" height="3000" alt="fig2a" src="https://github.com/user-attachments/assets/493e92b1-85e7-44cf-817c-63e7cd1e5525" />
+<img width="7200" height="6000" alt="subfig_1" src="https://github.com/user-attachments/assets/a2f83c49-155b-4562-a651-a4beee29071d" />
+
 
 
 ### Headmaps
 
 Knowing that each dog's DNA is most likely to be found in there owner's office, we began to examine the two main dog offices. These are for Office 1: Heidi, Vito, Fritzy and Urza, and for Office 2: Lily and Thor A. The amount of DNA belonging to each dog was visualized as a heatmap.
 ```
-R/heatmaps_dog_offices.R
+R/fig_3_heatmaps_dog_offices.R
 ``` 
 <img width="4800" height="4800" alt="fig3a" src="https://github.com/user-attachments/assets/d9aca3c6-a9dd-448a-870c-c3b710bc925c" />
 <img width="4800" height="4800" alt="fig3b" src="https://github.com/user-attachments/assets/c3c2c306-cab1-4921-bf0e-612a33261368" />
@@ -139,7 +140,7 @@ R/heatmaps_dog_offices.R
 
 As the ground samples were taken from various locations, they might as well contain DNA of other species. Therefore, the presence of human, Felican and Suidae DNA was also checked. As this is also an indicator of the amount of dog DNA in general, we decided to compare dog offices with all other locations. 
 ```
-R/family_dog_vs_non_dog_office.R
+R/fig_1_family_dog_vs_non_dog_office.R
 ```
 
 <img width="4800" height="4800" alt="fig1" src="https://github.com/user-attachments/assets/7d780132-6648-476b-9cc7-4a9829a92bd5" />
@@ -149,7 +150,7 @@ Samples were taken in the offices of dog owners (Dog Offices) and in offices whe
 
 Most of the DNA found is from humans or dogs, and dog DNA is more likely to be found in the dog offices than in other locations. To compare the amount of human and dog DNA in different locations, another plot was created.
 ```
-R/category_family_location.R
+R/fig_2a_category_family_location.R
 ```
 <img width="4800" height="4800" alt="fig2b" src="https://github.com/user-attachments/assets/bd775a49-c4f5-4f2f-84a0-25500bb6da16" />
 
@@ -158,9 +159,15 @@ R/category_family_location.R
 
 Another hypothesis was that DNA might accumulate near the walls. Therefore, the amount of human and dog DNA was compared in the dog offices as well as in other locations.
 ```
-R/walls_vs_no_walls.R
+R/fig_2b_walls_vs_no_walls.R
 ```
+<img width="4800" height="4800" alt="fig2b" src="https://github.com/user-attachments/assets/446189d1-f781-4f71-bc44-505309f31ee4" />
 
+## Phylogenetic Tree
+
+The software TreeViewer was used to visualize the phylogenetic tree, generating the following tree:
+
+<img width="2638" height="2638" alt="fig4" src="https://github.com/user-attachments/assets/6741de5a-206f-4ec7-bb50-0a6e91926d0d" />
 
 
 
