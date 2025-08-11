@@ -121,8 +121,8 @@ After this filtering, different locations where the dogs might be present are ex
 
 Samples that are filtered out are highlighted with an asterisk. The data shows that each dog is mainly present in its owner's office. Based on this knowledge, further research was conducted.
 
-<img width="4800" height="4800" alt="fig1" src="https://github.com/user-attachments/assets/7d780132-6648-476b-9cc7-4a9829a92bd5" />
-Samples were taken in the offices of dog owners (Dog Offices) and in offices where dogs were not expected (Non-Dog Offices). The bar plot shows the total number of samples in which each family was detected, using defined filtering parameters.  Out of all the samples, mainly homindian DNA and candida DNA was detected. Felicae and suidae DNA was also detected, but in lower numbers. The pie chart shows the percentage corresponding to each family. The difference between Canidae and Homindae DNA is especially high, indicating the possibility of differentiating between Dog and Non-Dog Offices based on the amount of DNA present.
+<img width="3600" height="3000" alt="fig2a" src="https://github.com/user-attachments/assets/493e92b1-85e7-44cf-817c-63e7cd1e5525" />
+
 
 ### Headmaps
 
@@ -130,6 +130,10 @@ Knowing that each dog's DNA is most likely to be found in there owner's office, 
 ```
 R/heatmaps_dog_offices.R
 ``` 
+<img width="4800" height="4800" alt="fig3a" src="https://github.com/user-attachments/assets/d9aca3c6-a9dd-448a-870c-c3b710bc925c" />
+<img width="4800" height="4800" alt="fig3b" src="https://github.com/user-attachments/assets/c3c2c306-cab1-4921-bf0e-612a33261368" />
+
+
 
 ### Different species in dog and non-dog locations
 
@@ -138,12 +142,17 @@ As the ground samples were taken from various locations, they might as well cont
 R/family_dog_vs_non_dog_office.R
 ```
 
+<img width="4800" height="4800" alt="fig1" src="https://github.com/user-attachments/assets/7d780132-6648-476b-9cc7-4a9829a92bd5" />
+Samples were taken in the offices of dog owners (Dog Offices) and in offices where dogs were not expected (Non-Dog Offices). The bar plot shows the total number of samples in which each family was detected, using defined filtering parameters.  Out of all the samples, mainly homindian DNA and candida DNA was detected. Felicae and suidae DNA was also detected, but in lower numbers. The pie chart shows the percentage corresponding to each family. The difference between Canidae and Homindae DNA is especially high, indicating the possibility of differentiating between Dog and Non-Dog Offices based on the amount of DNA present.
+
 ### Occurrence of human and dog DNA
 
 Most of the DNA found is from humans or dogs, and dog DNA is more likely to be found in the dog offices than in other locations. To compare the amount of human and dog DNA in different locations, another plot was created.
 ```
 R/category_family_location.R
 ```
+<img width="4800" height="4800" alt="fig2b" src="https://github.com/user-attachments/assets/bd775a49-c4f5-4f2f-84a0-25500bb6da16" />
+
 
 ### Walls vs Non-Walls
 
