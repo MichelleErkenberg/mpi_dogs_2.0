@@ -132,6 +132,8 @@ Knowing that each dog's DNA is most likely to be found in there owner's office, 
 R/fig_3_heatmaps_dog_offices.R
 ``` 
 <img width="4800" height="4800" alt="fig3a" src="https://github.com/user-attachments/assets/d9aca3c6-a9dd-448a-870c-c3b710bc925c" />
+The heatmaps of each Dog Office 1 dog are visualized. Fritzy stays more on the right side of the office, while Heidi and Vito stay more on the left side, as those are their owners' workplaces. Urza only stayed at the office for a short time, as can be seen from the low amount of her DNA data. 
+
 <img width="4800" height="4800" alt="fig3b" src="https://github.com/user-attachments/assets/c3c2c306-cab1-4921-bf0e-612a33261368" />
 
 
