@@ -123,6 +123,7 @@ Samples that are filtered out are highlighted with an asterisk. The data shows t
 
 <img width="7200" height="6000" alt="subfig_1" src="https://github.com/user-attachments/assets/a2f83c49-155b-4562-a651-a4beee29071d" />
 
+(Also text for subfig. ?)
 
 
 ### Headmaps
@@ -132,10 +133,10 @@ Knowing that each dog's DNA is most likely to be found in there owner's office, 
 R/fig_3_heatmaps_dog_offices.R
 ``` 
 <img width="4800" height="4800" alt="fig3a" src="https://github.com/user-attachments/assets/d9aca3c6-a9dd-448a-870c-c3b710bc925c" />
-The heatmaps of each Dog Office 1 dog are visualized. Fritzy stays more on the right side of the office, while Heidi and Vito stay more on the left side, as those are their owners' workplaces. Urza only stayed at the office for a short time, as can be seen from the low amount of her DNA data. Each individual heatmap represents a pattern of each dog's behavior in the office.
+The heatmaps of each Dog Office 1 dog are visualized. Fritzy stays more on the right side of the office, while Heidi and Vito stay more on the left side, as those are their owners' workplaces. Urza only stayed at the office for a short time, as can be seen from the low amount of her DNA data. Each individual heatmap represents a pattern of each dog's behavior in the office. Spaces with less DNA are often caused by furniture, such as office desks where dogs do not stay.
 
 <img width="4800" height="4800" alt="fig3b" src="https://github.com/user-attachments/assets/c3c2c306-cab1-4921-bf0e-612a33261368" />
-Represented are the heatmaps of the dogs from Office 2, Lily and Thor A. (
+Represented are the heatmaps of the dogs from Office 2, Lily and Thor A. (Maybe we could discuss both heatmaps together. Do we have a room plan for the office?)
 
 
 ### Different species in dog and non-dog locations
@@ -154,8 +155,10 @@ Most of the DNA found is from humans or dogs, and dog DNA is more likely to be f
 ```
 R/fig_2a_category_family_location.R
 ```
-<img width="4800" height="4800" alt="fig2b" src="https://github.com/user-attachments/assets/bd775a49-c4f5-4f2f-84a0-25500bb6da16" />
 
+<img width="3600" height="3000" alt="fig2a" src="https://github.com/user-attachments/assets/c16f4560-b793-4a6b-85eb-48bdefa591de" />
+
+Visualized is the amount of Candidae and Hominidae DNA found in different areas of the building. The highest levels of Candidae DNA are found in Dog Offices, the Main Entrance, and Hallways. The highest amounts of Hominidae DNA are also found in these two locations. In locations where dogs are not expected, such as Non-Dog Offices and, in particular, the labs, the amount of DNA is low. The presence of Candidae DNA in the PCR lab may be due to one of the dog owners who works there.
 
 ### Walls vs Non-Walls
 
@@ -165,11 +168,16 @@ R/fig_2b_walls_vs_no_walls.R
 ```
 <img width="4800" height="4800" alt="fig2b" src="https://github.com/user-attachments/assets/446189d1-f781-4f71-bc44-505309f31ee4" />
 
+To test whether DNA accumulates near walls, the amount of DNA in areas near the walls was compared to the amount of DNA in the center of the room. This was done for Candidae and Homindia DNA for Dog offices and Non-Dog locations (Non-Dog Offices, Lab,...). (Maybe include the statistical test results here.) For both Candidae and Hominidae, larger amounts of DNA were found near the walls. This may be due to difficulties in cleaning this area or, in the case of dogs, because they prefer to stay near the wall (Heidi).
+
 ## Phylogenetic Tree
 
 The software TreeViewer was used to visualize the phylogenetic tree, generating the following tree:
 
 <img width="2638" height="2638" alt="fig4" src="https://github.com/user-attachments/assets/6741de5a-206f-4ec7-bb50-0a6e91926d0d" />
+
+A phylogenetic tree was created containing previously published dogs and MPI-Dogs. The majority of the dogs — Fritzy, Urza, Heidi, Vito, Lily, Thor, Anda — are Type A1a, while Charlie is Type C and Cami and Thor are Type B. The fact that the Type A1a dogs share offices might have caused some problems in distinguishing between them. Nevertheless, enough SNPs were found for each individual to identify each of them. (ref table?)
+
 
 
 
