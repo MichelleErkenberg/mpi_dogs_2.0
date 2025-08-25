@@ -10,6 +10,7 @@ bash /bin/step_by_step_run_all.sh
 ```
 
 
+
 ## Step-By-Step explanation of the script
 
 ### 1. Processing (processing and count)
